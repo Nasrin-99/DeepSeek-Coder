@@ -24,7 +24,7 @@ def read_test_examples(data_path: str):
 
     # test_cases
     examples_str = []
-    for i in range(1, 4):
+    for i in range(1, 6):
         ex = examples[i]
         q, test, code = ex['text'], ex['test_list'], ex['code']
         ex_prompt = format_test_example(q, test, code)
